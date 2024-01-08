@@ -3,6 +3,75 @@
   padding: 0;
 }
 
+
+/* Cookie Consent Griup CSS */
+.cookie-popup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+ 
+.cookie-content {
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+}
+
+.cookie-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  animation: floatMessage 4s ease-in-out;
+}
+
+@keyframes floatMessage {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  25% {
+    transform: translate(-50%, -70%);
+  }
+
+  75% {
+    transform: translate(-50%, -70%);
+  }
+
+  100% {
+    transform: translate(-50%, -90%);
+    opacity: 0;
+  }
+}
+
+
 /* Dynamic Background */
 .dynamic-background {
   position: fixed;
@@ -130,7 +199,7 @@ header nav {
 }
 
 .searchbar input[type="text"] {
-  height: 43px;
+  height: 25px; /* It was also 43px but after adding cookie formatting had to be adjusted */
   width: 400px;
   padding: 5px;
   border: 5px solid #0f0f0f; /* Adding a solid border */
@@ -279,135 +348,9 @@ header nav {
   background-color: #f0f0f0;
 }
 
-/*                                  ACCOUNTS SECTION POP UP MENU               */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
+ 
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 60%;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/*                               ACCOUNTS SECTION - SIGN UP                                   */
-
-.signup-form {
-  position: fixed;
-  /* these top and left will move the from in the website */
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff; /* Changed to a lighter background color */
-  padding: 30px;
-  border: 2px solid #9b59b6; /* Adjusted border color */
-  border-radius: 10px; /* Slightly reduced border radius */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  max-width: 400px; /* Adjusted maximum width */
-  width: 90%; /* Adjusted width */
-}
-
-.input-group {
-  margin-bottom: 20px; /* Increased margin between input groups */
-  width: 280px;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px; /* Adjusted margin */
-  font-weight: bold;
-  color: #333; /* Changed label color */
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  width: calc(100% - 18px); /* Adjusted input width */
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 14px; /* Slightly increased font size */
-}
-
-.submit-btn {
-  background-color: #9b59b6;
-  color: #fff;
-  padding: 12px 24px; /* Adjusted button padding */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 16px; /* Slightly increased font size */
-}
-
-.submit-btn:hover {
-  background-color: #8e44ad; /* Darker color on hover */
-}
-
-/*                               ACCOUNTS SECTION - LOGIN                                   */
-
-.login-form {
-  position: fixed;
-  /* these top and left will move the from in the website */
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff; /* Changed to a lighter background color */
-  padding: 30px;
-  border: 2px solid #9b59b6; /* Adjusted border color */
-  border-radius: 10px; /* Slightly reduced border radius */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  max-width: 400px; /* Adjusted maximum width */
-  width: 90%; /* Adjusted width */
-}
-
-#loginMessage {
-  color: #4caf50;
-  display: none;
-}
-
-/*                               ACCOUNTS SECTION - LOGOUT                                   */
-
-.logout-form {
-  position: fixed;
-  /* these top and left will move the from in the website */
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff; /* Changed to a lighter background color */
-  padding: 30px;
-  border: 2px solid #9b59b6; /* Adjusted border color */
-  border-radius: 10px; /* Slightly reduced border radius */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  max-width: 400px; /* Adjusted maximum width */
-  width: 90%; /* Adjusted width */
-}
-
-/*                  COMMENT SECTION */
+/*                  COMMENT SECTION                       */
 
 .comment-section {
   display: flex;
@@ -503,6 +446,4 @@ input[type="password"] {
 }
 
 
-
-/* RESPONSIVNESS  : These will not effect the exisiting one */
-
+/* RESPONSIVNESS MAKING */
