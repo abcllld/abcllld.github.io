@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Cookie Consent Griup CSS */
+.cookie-popup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+ 
+.cookie-content {
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+}
+
+.cookie-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  animation: floatMessage 4s ease-in-out;
+}
+
+@keyframes floatMessage {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  25% {
+    transform: translate(-50%, -70%);
+  }
+
+  75% {
+    transform: translate(-50%, -70%);
+  }
+
+  100% {
+    transform: translate(-50%, -90%);
+    opacity: 0;
+  }
+}
+
+
+/* Dynamic Background */
+.dynamic-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  animation: changeBackground 20s infinite;
+}
+
+/* Animation */
+
+/* These are for Image. It is hanginf a little so we will use color here first */
+/* @keyframes changeBackground {
+  0% {
+    background-image: url("img1.jpg");
+  } 
+  15% {
+    background-image: url("img2.jpg");
+  }
+  30% {
+    background-image: url("img3.jpg");
+  }
+  45% {
+    background-image: url("img4.jpg");
+  }
+  60% {
+    background-image: url("img5.jpg");
+  }
+  70% {
+    background-image: url("img6.jpg");
+  }
+  100% {
+    background-image: url("img7.jpg");
+  }
+} */
+
+@keyframes changeBackground {
+  0% {
+    background-color: rgb(247, 199, 199);
+  }
+  15% {
+    background-color: rgb(231, 203, 151);
+  }
+  30% {
+    background-color: rgb(235, 235, 149);
+  }
+  45% {
+    background-color: rgb(138, 241, 138);
+  }
+  60% {
+    background-color: rgba(166, 166, 226, 0.973);
+  }
+  70% {
+    background-color: rgb(187, 141, 219);
+  }
+  100% {
+    background-color: rgb(241, 158, 241);
+  }
+}
+
+@keyframes beautifulEffect {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.transition-effect {
+  transition: transform 0.1s ease-in-out;
+  transform-origin: center;
+}
+
+/* Changing Color of Links */
+a {
+  color: #ff0000; /* Change to the desired color code */
+  text-decoration: none;
+}
+
+/* Change the color of all anchor tags on hover */
+a:hover {
+  color: #00ff00;
+}
+
+/* Change the font and font-size of all anchor tags */
+a {
+  font-family: "Your Font", sans-serif;
+  font-size: 17px;
+}
+
+/*                          NAVIGATION BAR */
+
+.navbar {
+  /* background-color: #35424a; */
+  height: 60px;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  margin-top: 9px;
+}
+
+.profilelogo img {
+  width: 40px;
+  height: 40px;
+  margin-top: 9px;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar input[type="text"] {
+  height: 25px; /* It was also 43px but after adding cookie formatting had to be adjusted */
+  width: 400px;
+  padding: 5px;
+  border: 5px solid #0f0f0f; /* Adding a solid border */
+  border-radius: 20px;
+  margin-right: 12px;
+  margin-top: 8px;
+  outline: none;
+}
+
+.searchbar button {
+  height: 43px;
+  padding: 0 15px;
+  margin-top: 7px;
+  border: 5px solid #0f0f0f; /* Adding a solid border */
+  border-radius: 20px;
+  background-color: #3f9dcb;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchbar button:hover {
+  background-color: #307a9f;
+  border-color: #307a9f; /* Change border color on hover */
+}
+
+.box2 {
+  /* background-image: url("background.jpg"); */
+  height: 600px;
+  width: 100%;
+  align-content: center;
+  position: relative;
+}
+
+/*                                  COLLAPSEABLE BUTTONS                            */
+
+.container {
+  width: 160px;
+  margin: 12px;
+  margin-left: 70px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.header {
+  background-color: #dae9a6;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.list {
+  display: none;
+  padding-left: 20px;
+}
+
+.triangle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+}
+
+/*                                ACCOUNTS SECTION                                     */
+
+.account {
+  position: absolute;
+  top: 4px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account img {
+  width: 44px;
+  height: 43px;
+  cursor: pointer;
+}
+
+.account-options {
+  width: 91px;
+  height: 111px;
+  width: 91px;
+  margin-top: 7px;
+  .navbar {
+    /* background-color: #35424a; */
+    height: 60px;
+    width: 100%;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .logo img {
+    height: 40px;
+    width: auto;
+    margin-top: 9px;
+  }
+
+  .profilelogo img {
+    width: 40px;
+    height: 40px;
+    margin-top: 9px;
+  }
+
+  .searchbar {
+    display: flex;
+    align-items: center;
+  }
+
+  margin-right: -18px;
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #a6b7d6;
+  border: 1px solid #9645d8;
+  border-style: dashed;
+  padding: 5px 0;
+  list-style: none;
+  z-index: 1;
+}
+
+.account-options li {
+  padding: 8px 15px;
+}
+
+.account-options li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.account-options li a:hover {
+  background-color: #f0f0f0;
+}
+
+ 
+
+/*                  COMMENT SECTION                       */
+
+.comment-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  /* background-color: #d9fdf5; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(150% - 18px);
+  padding: 10px 20px;
+  border: 7px solid #143841;
+  border-radius: 5px;
+  border-style: groove;
+  font-size: 14px;
+}
+
+#commentBtn {
+  padding: 10px 10px;
+  margin-left: 110px;
+  background-color: #535154;
+  color: #0bf1e7;
+  border: 6px solid rgb(7, 132, 248);
+  border-style: double;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#commentBtn:hover {
+  background-color: #121313;
+}
+#commentTextArea {
+  background-color: #a6ddc2;
+  width: 500px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 30px;
+  border: 8px solid #121313;
+  font-size: 16px;
+  display: none;
+}
+#postBtn {
+  padding: 15px 240px;
+  background-color: #3cb5e0;
+  color: #fff;
+  border: 8px solid blue;
+  border-style: outset;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: none;
+}
+#responseMessage {
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+
+/*              SOCIAL MEDIA                      */
+
+.social-media {
+  text-align: center;
+  margin: 20px;
+}
+
+.social-media a i {
+  margin: 0 10px;
+  font-size: 25px;
+  color: #020202;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-media a i:hover {
+  color: #f80303;
+  transform: scale(1.7);
+}
+/*                              FOOTER                       */
+
+.footer {
+  background-color: #e4e99f; /* Change this to the color you prefer */
+  text-align: center;
+  padding: 5px 20px; /* Adjust the padding to your liking */
+  border-top: 2px solid #333; /* Thick border at the top of the footer */
+  border-bottom: 2px solid #333; /* Border at the bottom of the footer */
+}
+
+.footer p {
+  margin: 0;
+}
