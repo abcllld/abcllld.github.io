@@ -7,65 +7,12 @@
     <link rel="stylesheet" href="web.css">
     <script src="web.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <title>Machine Learning Prodigy</title>
+    <title>Document</title>
 
-    <style>
-        /* Quotes CSS */
-        #popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 9999;
-            text-align: center;
-        }
-
-        #popup-content {
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-        }
-
-        #cutButton {
-            background: none;
-            border: none;
-            color: rgb(211, 179, 179);
-            font-size: 30px;
-            cursor: pointer;
-            position: absolute;
-            top: -10px;
-            right: 350px;
-        }
-
-        #quotes{
-            font-size: 25px;
-            text-shadow: 10px 10px 10px rgba(255, 0, 255, 0.7);
-            font-family:'Times New Roman', Times, serif;
-        }
-    </style>
 
 </head>
 
 <body>
-
-    <div id="popup">
-        <div id="popup-content">
-            <button id="cutButton" class="quote-close-btn"><i class="fa-solid fa-circle-xmark"></i></button>
-            <h1 style="font-size: 40px; font-style: italic; color: rgb(255, 255, 255);">Welcome Back</h1><br>
-            <h2 style="font-size: 25px; font-family:'Times New Roman', Times, serif;color: rgb(245, 75, 63);">Thought of the Day</h2><br>
-            <div id="quotes"></div>
-        </div>
-    </div>
-
-    <!-- Rest of your HTML content -->
-    <!-- ... -->
-
-
     <!-- Dynamic Backgrounds -->
     <div class="dynamic-background"></div>
 
@@ -163,183 +110,163 @@
             <img src="profile.png" alt="Account" id="accountIcon" onclick="toggleAccountOptions()">
             <ul class="account-options" id="accountOptions">
                 <!-- Here if we want normal Pop Up then just remove this links andput a # sign there -->
-                <li><a href="https://abcllld.github.io/signup/" onclick="openSignUp()">Sign Up</a></li>
-                <li><a href="https://abcllld.github.io/login/" onclick="openLogin()">Login</a></li>
-                <li><a href="https://abcllld.github.io/logout/" onclick="openLogout()">Logout</a></li>
+                <li><a href="https://glittery-buttercream-9eb698.netlify.app/" onclick="openSignUp()">Sign Up</a></li>
+                <li><a href="https://gleaming-palmier-9e5dbc.netlify.app/" onclick="openLogin()">Login</a></li>
+                <li><a href="#" onclick="openLogout()">Logout</a></li>
             </ul>
         </div>
-        <br>
 
-        <br>
-
-
-
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <div class="comment-section">
-            <div id="emailBox">
-                <input type="email" id="emailInput" class="comment-input" placeholder="Enter your Email">
-            </div>
-            <button id="commentBtn" onclick="showCommentTextArea()">Comment</button>
-            <div id="commentBox">
-                <textarea id="commentTextArea" rows="4" placeholder="Enter Your Comment"></textarea>
-                <button id="postBtn" onclick="postComment()">Post</button>
-            </div>
-            <p id="responseMessage" class="hidden"></p>
-        </div>
-
-        <!-- Creating a dynamic background -->
-
-        <header>
-            <div class="about-me">
-                <h3>About Me</h3>
-                <p>
-                    Hi, I'm Rahul Mishra, currently studying BCA with a focus on Artificial Intelligence and Machine
-                    Learning at Assam Down Town University. I'm passionate about exploring new technologies and building
-                    innovative projects.<br><br>
-
-                    My dedication to machine learning has led me to create this website. It's a platform aimed at
-                    sharing
-                    knowledge and fostering learning in AI and ML. Through this, I aim to deepen my understanding while
-                    contributing to society's technological advancement.<br><br>
-
-                    Join me on this journey of discovery and innovation in AI. Let's learn and make a positive impact
-                    through technology together.<br><br><br><br></p>
-            </div>
-        </header>
-
-        <header>
-            <div class="need">
-                <h3>Need For Creating This Website</h3>
-                <p>Welcome to our website, a comprehensive hub dedicated to the exploration and understanding of
-                    Artificial
-                    Intelligence (AI) concepts. Our primary focus is to serve as a one-stop destination, offering
-                    students
-                    and enthusiasts an extensive array of resources covering various branches of AI, including Machine
-                    Learning (ML), Deep Learning (DL), Natural Language Processing (NLP), and more.<br><br>
-
-                    In today's dynamic learning landscape, we've identified a gap—an absence of a centralized platform
-                    that
-                    holistically addresses the myriad aspects of AI. Our mission is to bridge this gap by curating an
-                    inclusive repository of educational materials, insights, and tools. We aim to provide a complete
-                    learning experience, enabling individuals to delve into and comprehend the intricate world of AI
-                    effortlessly.<br><br>
-
-                    Our platform is designed to cater to diverse learning needs, whether you're a novice eager to
-                    explore
-                    the fundamentals of ML or an enthusiast keen on diving deeper into DL and NLP. We understand the
-                    importance of accessible, concise, and reliable information, and our goal is to offer precisely
-                    that—clear explanations, comprehensive resources, and practical examples.<br><br>
-
-                    By assembling a comprehensive collection of AI concepts, tutorials, articles, and practical guides,
-                    we
-                    aim to empower learners, educators, and curious minds alike. Whether you're stepping into the realm
-                    of
-                    AI for the first time or seeking advanced knowledge, our platform is here to support your learning
-                    journey.<br><br>
-
-                    Join us on this educational odyssey as we embark on a mission to democratize AI knowledge, making it
-                    accessible to everyone eager to explore the fascinating world of Artificial Intelligence. Together,
-                    let's learn, grow, and discover the incredible possibilities that AI offers.<br><br></p>
-            </div>
-        </header>
-
-        <div class="social-media">
-            <a href="https://github.com/abcllld" target="_blank"><i class="fab fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/rahul-mishra-9a8826269/" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/rahul9076mishra/" target="_blank"><i
-                    class="fab fa-instagram-square"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100080977855641" target="_blank"><i
-                    class="fab fa-facebook-square"></i></a>
-            <a href="https://www.kaggle.com/abcllld/Home" target="_blank"><i class="fab fa-kaggle"></i></a>
-        </div>
-
-        <div class="footer">
-            <p>&copy; 2024 Education For All Pvt Ltd</p>
-        </div>
-
-        <!-- Cookie Consent Popup -->
-        <div class="cookie-popup" id="cookiePopup">
-            <div class="cookie-content">
-                <h2>Do you want a Cookie?🍪</h2>
-                <p>We use cookies to improve your experience on our site.</p>
-                <div class="buttons">
-                    <button onclick="acceptCookies()">Accept Cookie</button>
-                    <button onclick="declineCookies()">Decline Cookie</button>
-                    <button onclick="eatCookie()">I will just eat that cookie</button>
-                </div>
+        <!-- Sign-Up Form inside the signupModal -->
+        <div id="signupModal" class="modal">
+            <div class="modal-content signup-form">
+                <span class="close" onclick="closeSignUpModal()"><i class="fa-sharp fa-solid fa-square-xmark"></i></span>
+                <h2>Sign Up</h2>
+                <form id="signupForm">
+                    <div class="input-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password2">Password Check:</label>
+                        <input type="password" id="password2" name="password2" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="submit" value="Submit" class="submit-btn">
+                    </div>
+                </form>
             </div>
         </div>
 
 
+        <!-- Login Form inside the loginModal -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content login-form">
+                <span class="close" onclick="closeLoginModal()"><i class="fa-sharp fa-solid fa-square-xmark"></i></span>
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="loginUsername">Username/Email:</label>
+                        <input type="text" id="loginUsername" name="loginUsername" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="loginPassword">Password:</label>
+                        <input type="password" id="loginPassword" name="loginPassword" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="submit" value="Submit" class="submit-btn">
+                    </div>
+                </form>
+                <p id="loginMessage" style="display: none;">You are logged in</p>
+            </div>
+        </div>
 
-        <script>
-            window.onload = function () {
-                const popup = document.getElementById('popup');
-                const cutButton = document.getElementById('cutButton');
-                const quotesContainer = document.getElementById('quotes');
-                const cookiePopup = document.getElementById('cookiePopup'); // Get the cookie consent popup
+        <!-- Logout Form -->
+        <div id="logoutForm" class="modal">
+            <div class="modal-content logout-form">
+                <span class="close" onclick="closeLogoutModal()"><i class="fa-sharp fa-solid fa-square-xmark"></i></span>
+                <h2>Logout</h2>
+                <form id="logoutFormContent">
+                    <div class="input-group">
+                        <label for="logoutEmail">Enter Your Email To Logout:</label>
+                        <input type="email" id="logoutEmail" name="logoutEmail" required>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <input type="checkbox" id="confirmLogout" name="confirmLogout">
+                            I want to logout
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <input type="submit" value="Logout" class="submit-btn">
+                    </div>
+                </form>
+            </div>
+        </div>
 
-                // Function to fetch a random quote from the API
-                function fetchQuote() {
-                    fetch('https://api.quotable.io/random?tags=inspirational')
-                        .then(response => response.json())
-                        .then(data => {
-                            const quote = data.content;
-                            const author = data.author || 'Unknown';
+    </div>
 
-                            // Display the quote in the popup
-                            quotesContainer.innerHTML = `<p>"${quote}"</p><p>- ${author}</p>`;
-                            popup.style.display = 'block';
+    <div class="comment-section">
+        <div id="emailBox">
+            <input type="email" id="emailInput" class="comment-input" placeholder="Enter your Email">
+        </div>
+        <button id="commentBtn" onclick="showCommentTextArea()">Comment</button>
+        <div id="commentBox">
+            <textarea id="commentTextArea" rows="4" placeholder="Enter Your Comment"></textarea>
+            <button id="postBtn" onclick="postComment()">Post</button>
+        </div>
+        <p id="responseMessage" class="hidden"></p>
+    </div>
 
-                            // Show the cookie consent popup after the quote popup is displayed
-                            cookiePopup.style.display = 'block';
-                        })
-                        .catch(error => {
-                            console.log('Error fetching quote:', error);
-                        });
-                }
+    <!-- Creating a dynamic background -->
 
-                // Event listener for the cutButton to close the popup
-                cutButton.addEventListener('click', function () {
-                    popup.style.display = 'none';
-                });
+    <header>
+        <div class="about-me">
+            <h3>About Me</h3>
+            <p>
+                Hi, I'm Rahul Mishra, currently studying BCA with a focus on Artificial Intelligence and Machine
+                Learning at Assam Down Town University. I'm passionate about exploring new technologies and building
+                innovative projects.<br><br>
 
-                // Call the function to fetch and display the quote when the window loads
-                fetchQuote();
-            };
-        </script>
+                My dedication to machine learning has led me to create this website. It's a platform aimed at sharing
+                knowledge and fostering learning in AI and ML. Through this, I aim to deepen my understanding while
+                contributing to society's technological advancement.<br><br>
+
+                Join me on this journey of discovery and innovation in AI. Let's learn and make a positive impact
+                through technology together.<br><br><br><br></p>
+        </div>
+    </header>
+
+    <header>
+        <div class="need">
+            <h3>Need For Creating This Website</h3>
+            <p>Welcome to our website, a comprehensive hub dedicated to the exploration and understanding of Artificial
+                Intelligence (AI) concepts. Our primary focus is to serve as a one-stop destination, offering students
+                and enthusiasts an extensive array of resources covering various branches of AI, including Machine
+                Learning (ML), Deep Learning (DL), Natural Language Processing (NLP), and more.<br><br>
+
+                In today's dynamic learning landscape, we've identified a gap—an absence of a centralized platform that
+                holistically addresses the myriad aspects of AI. Our mission is to bridge this gap by curating an
+                inclusive repository of educational materials, insights, and tools. We aim to provide a complete
+                learning experience, enabling individuals to delve into and comprehend the intricate world of AI
+                effortlessly.<br><br>
+
+                Our platform is designed to cater to diverse learning needs, whether you're a novice eager to explore
+                the fundamentals of ML or an enthusiast keen on diving deeper into DL and NLP. We understand the
+                importance of accessible, concise, and reliable information, and our goal is to offer precisely
+                that—clear explanations, comprehensive resources, and practical examples.<br><br>
+
+                By assembling a comprehensive collection of AI concepts, tutorials, articles, and practical guides, we
+                aim to empower learners, educators, and curious minds alike. Whether you're stepping into the realm of
+                AI for the first time or seeking advanced knowledge, our platform is here to support your learning
+                journey.<br><br>
+
+                Join us on this educational odyssey as we embark on a mission to democratize AI knowledge, making it
+                accessible to everyone eager to explore the fascinating world of Artificial Intelligence. Together,
+                let's learn, grow, and discover the incredible possibilities that AI offers.<br><br></p>
+        </div>
+    </header>
+
+    <div class="social-media">
+        <a href="https://github.com/abcllld" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a href="https://www.linkedin.com/in/rahul-mishra-9a8826269/" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/rahul9076mishra/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100080977855641" target="_blank"><i
+                class="fab fa-facebook-square"></i></a>
+        <a href="https://www.kaggle.com/abcllld/Home" target="_blank"><i class="fab fa-kaggle"></i></a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Education For All Pvt Ltd</p>
+    </div>
 
 </body>
 
